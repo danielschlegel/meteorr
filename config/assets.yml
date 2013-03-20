@@ -1,0 +1,34 @@
+embed_assets: on
+
+javascripts:
+  workspace:
+    - public/javascripts/vendor/jquery.js
+    - public/javascripts/lib/*.js
+    - public/javascripts/views/**/*.js
+    - app/views/workspace/*.jst
+
+  server:
+    - test/javascript/server/allapps.js
+    - test/javascript/server/alltenants.js
+    - test/javascript/server/allgroups.js
+    - test/javascript/server/lib.js
+    - test/javascript/server/router.js
+    - test/javascript/server/startup.js #should be last
+
+  client:
+    - test/javascript/server/allapps.js
+    - test/javascript/server/alltenants.js
+    - test/javascript/server/allgroups.js
+    - test/javascript/server/lib.js
+    - test/javascript/server/router.js
+    - test/javascript/server/startup.js #should be last
+
+
+stylesheets:
+  common:
+    - public/stylesheets/reset.css
+    - public/stylesheets/widgets/*.css
+  workspace:
+    - public/stylesheets/pages/workspace.css
+  empty:
+    - public/stylesheets/pages/empty.css
